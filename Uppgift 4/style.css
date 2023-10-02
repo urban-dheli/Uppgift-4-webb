@@ -1,0 +1,74 @@
+
+.primary-navigation {
+    list-style: none;
+            
+    text-align: center;
+}
+        
+h1 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+        
+.parent {
+            
+    border: 1rem outset;
+    border-color: rgb(174, 172, 172);
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+            
+    background-color: gainsboro;
+    height: 20rem;
+    width: 20rem;
+}
+
+.ball {
+    height: 50%;
+    width: 50%;
+    border-radius: 100%;
+    margin: 0;
+    background: radial-gradient(circle at 15px 10px, #609bec, #031732);
+    animation: left-to-right 3s forwards infinite;
+}
+
+@keyframes left-to-right {
+
+    0% {
+        transform: translateX(0%) translateY(0%);
+    }
+
+    12.5% {
+        transform: translateX(50%) translateY(50%);
+    }
+
+    25% {
+        transform: translateX(0%) translateY(100%);
+    }
+
+    37.5% {
+        transform: translateX(50%) translateY(50%);
+    }
+
+    50% {
+        transform: translateX(100%) translateY(100%);
+    }
+
+    62.5% {
+        transform: translateX(50%) translateY(50%);
+    }
+
+    75% {
+        transform: translateX(100%) translateY(0%);
+    }
+
+    87.5% {
+        transform: translateX(50%) translateY(50%);
+    }
+
+    100% {
+        transform: translateX(0%) translateY(0%);
+    }
+}
